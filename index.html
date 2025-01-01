@@ -1,118 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-    <link rel="stylesheet" href="bootstrap.css">
-
-    <meta http-equiv="refresh" content="30">
-
-    <title>RoYoshi YouTube Statistics</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website No Longer In Use</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        p {
+            font-size: 18px;
+        }
+        .link {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 20px;
+            background-color: #6200ea;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .link:hover {
+            background-color: #3700b3;
+        }
+        img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
 </head>
-
 <body>
-<br>
-    <img width="100" draggable="false" src="./channels4_profile.png" class="mx-auto d-block"> <br>
 
-    <div class="container" style="max-width:400px;">
-
-    <div class="jumbotron">
-
-        <h4 class="title" align="center">RoYoshi Statistics </h4> <br> <br> 
-		<link rel="icon" href="./channels4_profile.png">
-
-        <a href="https://www.youtube.com/@RoY0shi"><img width="145" src="subscribe.png" class="mx-auto d-block"></a>
-		<h1></h1>
-		<a href="discord.html"><img width="150" src="discord.png" class="mx-auto d-block"></a>
+    <div class="container">
+        <img src="channels4_profile.png" alt="RoYoshi Logo">
+        <h1>This Website is No Longer In Use</h1>
+        <p>For updates, please check out the official channels:</p>
+        <a href="https://www.youtube.com/channel/UCxSQ4Hz5rsYpARqQLK0wmMA" class="link" target="_blank">YouTube Channel</a>
+        <a href="https://discord.gg/MNJr6UfkNY" class="link" target="_blank">Join Discord</a>
         
-        <br> <br> <br> 
-
-        
-     <h4 class="card-title" align="center">Subscribers</h4>
-     <div id="subCount" align="center"></div> 
-    
-    <br> <br>
-
-    <h4 class="card-title" align="center">Views</h4> 
-     <div id="viewCount" align="center"></div> 
-
-     <br> <br>
-
-     <h4 class="card-title" align="center">Videos</h4> 
-     <div id="videoCount" align="center"></div> 
-
-     </div></div>
-
-    <script>
-
-    // Get Subscribers
-    const youtubeKey = 'AIzaSyD5v67kqSwZuTtLJakiiIOFeMTWIzO3xLc';
-    const youtubeUser = 'UCxSQ4Hz5rsYpARqQLK0wmMA';
-    const subCount = document.getElementById('subCount');
-    const viewCount = document.getElementById('viewCount');
-    const videoCount = document.getElementById('videoCount');
-    
-
-
-    let getSubscribers = () => {
-
-        fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youtubeUser}&key=${youtubeKey}`)
-        .then(response => {
-            return response.json()
-        })
-        .then(data => {
-            console.log(data);
-            subCount.innerHTML = data["items"][0].statistics.subscriberCount;
-            
-        })
-
-    }
-
-    getSubscribers(); 
-
-
-    let getViwes = () => {
-
-        fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youtubeUser}&key=${youtubeKey}`)
-        .then(response => {
-            return response.json()
-        })
-        .then(data => {
-            console.log(data);
-            viewCount.innerHTML = data["items"][0].statistics.viewCount;
-    
-        })
- 
-    }
-
-     getViwes();
-
-
-let getVideos = () => {
-
-fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youtubeUser}&key=${youtubeKey}`)
-.then(response => {
-    return response.json()
-})
-.then(data => {
-    console.log(data);
-    videoCount.innerHTML = data["items"][0].statistics.videoCount;
-    
-})
- 
-}
-
-getVideos();
-
-
-
-
-    </script>
-
-<h6 class="card-subtitle mb-2 text-muted" align=center>2022-2023 RoYoshi™. &nbsp; All Rights Reserved</h6> <br>
+        <footer>
+            <p>&copy; 2022-2025 RoYoshi™. All Rights Reserved.</p>
+        </footer>
+    </div>
 
 </body>
-
-
 </html>
