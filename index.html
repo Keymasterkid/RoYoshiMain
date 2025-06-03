@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website No Longer In Use</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .container {
-            background-color: #1c1c1c;
-            border-radius: 10px;
-            padding: 20px;
-            width: 80%;
-            max-width: 500px;
-        }
-        h1 {
-            color: #ff4081;
-        }
-        p {
-            font-size: 18px;
-        }
-        .link {
-            display: inline-block;
-            margin: 10px;
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 20px;
-            background-color: #6200ea;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .link:hover {
-            background-color: #3700b3;
-        }
-        img {
-            max-width: 100px;
-            margin-bottom: 20px;
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website No Longer In Use</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      padding: 20px;
+      width: 80%;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    h1 {
+      color: #ff4081;
+    }
+    p {
+      font-size: 18px;
+    }
+    .link {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 20px;
+      background-color: #6200ea;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .link:hover {
+      background-color: #3700b3;
+    }
+    img {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+
+    /* 👇 Fixed badge in the corner */
+    .corner-badge {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      width: 120px;
+      opacity: 0.7;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 10;
+      pointer-events: auto;
+    }
+
+    .corner-badge:hover {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="channels4_profile.png" alt="RoYoshi Logo">
-        <h1>This Website is No Longer In Use</h1>
-        <p>For updates, please check out the official channels:</p>
-        <a href="https://www.youtube.com/channel/UCxSQ4Hz5rsYpARqQLK0wmMA" class="link" target="_blank">YouTube Channel</a>
-        <a href="https://discord.gg/MNJr6UfkNY" class="link" target="_blank">Join Discord</a>
-        
-        <footer>
-            <p>&copy; 2022-2025 RoYoshi™. All Rights Reserved.</p>
-        </footer>
-    </div>
+  <div class="container">
+    <img src="channels4_profile.png" alt="RoYoshi Logo">
+    <h1>This Website is No Longer In Use</h1>
+    <p>For updates, please check out the official channels:</p>
+    <a href="https://www.youtube.com/channel/UCxSQ4Hz5rsYpARqQLK0wmMA" class="link" target="_blank">YouTube Channel</a>
+    <a href="https://discord.gg/MNJr6UfkNY" class="link" target="_blank">Join Discord</a>
+    <footer>
+      <p>&copy; 2022-2025 RoYoshi™. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <img src="Site managed by BaseCode 2 transparent.png" alt="Managed by BaseCode" class="corner-badge">
 
 </body>
 </html>
